@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="sticky">
+    <a href="#" class="logo">Food<span>.</span></a>
+    <ul class="navigation">
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#expert">Expert</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contant</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>Always close Good</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia at ab tempore magni ipsum reprehenderit</p>
+      <a href="#" class="btn">Our Menu</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="row">
+      <div class="col50">
+        <h2 class="titleText"><span>A</span>bout us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime eveniet voluptas nisi! Dolores,
+          repellendus amet nisi consectetur reprehenderit fugit et at eos labore iure necessitatibus asperiores natus
+          doloremque nesciunt?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatibus
+          culpa dignissimos expedita, repellat architecto deserunt temporibus amet, non officiis Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Et error perferendis voluptate nam, nesciunt est delectus ipsum suscipit
+          nisi repellat, placeat repudiandae, ipsa debitis recusandae deleniti molestiae incidunt! Ipsam, harum.</p>
+        <div class="col50">
+          <div class="imgBx">
+            <img src="/image/img1.jpg">
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toogle("sticky", window.scrollY > 0);
+    });
+  </script>
+</body>
+
+</html>
